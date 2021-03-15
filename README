@@ -1,0 +1,19 @@
+########## INSTALLATION ###########
+
+-> mettre en place le git lab
+
+-> mettre en place le docker
+    > docker machine
+    > création des containers
+        > docker-compose up --build
+        > winpty docker exec -it moteur_histoires_php_1  bash
+
+-> mettre en place la base de données
+    > host: see docker machine
+    >  composer require symfony/orm-pack
+       composer require --dev symfony/maker-bundle
+    > variable d'env voir .env
+    > mise en place de la liaison base de donnée IDE
+    > Commandes usuelles:
+     php bin/console make:migration
+     php bin/console doctrine:migrations:migrate
