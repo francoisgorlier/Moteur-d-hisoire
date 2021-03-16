@@ -28,7 +28,7 @@ class PrimaryElement
     private $words = [];
 
     /**
-     * @ORM\Column(type="array", nullable=true)
+     * @ORM\Column(type="json", length=255, nullable=true)
      */
     private $groups = [];
 

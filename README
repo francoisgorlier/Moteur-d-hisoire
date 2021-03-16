@@ -17,3 +17,6 @@
     > Commandes usuelles:
      php bin/console make:migration
      php bin/console doctrine:migrations:migrate
+
+-> Mettre en place des fixtures
+     > php bin/console doctrine:fixtures:load

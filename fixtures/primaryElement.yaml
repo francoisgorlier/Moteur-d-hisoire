@@ -1,0 +1,13 @@
+App\Entity\PrimaryElement:
+  - type: 'subject'
+    words:
+      main: 'Me'
+    groups:
+      - best
+    meaning: 'admin'
+  - type: 'subject'
+    words:
+      main: 'You'
+    groups:
+      - friend
+    meaning: 'user'
