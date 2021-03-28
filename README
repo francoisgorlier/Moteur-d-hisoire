@@ -6,7 +6,7 @@
     > docker machine
     > création des containers
         > docker-compose up --build
-        > winpty docker exec -it moteur_histoires_php_1  bash
+        > docker exec -it moteur_histoires_php_1  bash
 
 -> mettre en place la base de données
     > host: see docker machine
