@@ -1,0 +1,9 @@
+App\Entity\Adjectif:
+  - mot: 'rapide'
+  - mot: 'lent'
+  - mot: 'pauvre'
+  - mot: 'riche'
+  - mot: 'gentil'
+  - mot: 'méchant'
+  - mot: 'aimable'
+  - mot: 'persévérant'

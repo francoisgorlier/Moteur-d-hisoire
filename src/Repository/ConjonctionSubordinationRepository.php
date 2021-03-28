@@ -19,32 +19,14 @@ class ConjonctionSubordinationRepository extends ServiceEntityRepository
         parent::__construct($registry, ConjonctionSubordination::class);
     }
 
-    // /**
-    //  * @return ConjonctionSubordination[] Returns an array of ConjonctionSubordination objects
-    //  */
-    /*
-    public function findByExampleField($value)
-    {
-        return $this->createQueryBuilder('c')
-            ->andWhere('c.exampleField = :val')
-            ->setParameter('val', $value)
-            ->orderBy('c.id', 'ASC')
-            ->setMaxResults(10)
-            ->getQuery()
-            ->getResult()
-        ;
+    /**
+     * @param ConjonctionSubordination $conjonctionSubordination
+     *
+     * @throws \Doctrine\ORM\ORMException
+     * @throws \Doctrine\ORM\OptimisticLockException
+     */
+    public function save(ConjonctionSubordination $conjonctionSubordination) {
+        $this->_em->persist($conjonctionSubordination);
+        $this->_em->flush();
     }
-    */
-
-    /*
-    public function findOneBySomeField($value): ?ConjonctionSubordination
-    {
-        return $this->createQueryBuilder('c')
-            ->andWhere('c.exampleField = :val')
-            ->setParameter('val', $value)
-            ->getQuery()
-            ->getOneOrNullResult()
-        ;
-    }
-    */
 }

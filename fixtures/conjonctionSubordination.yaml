@@ -1,0 +1,8 @@
+App\Entity\ConjonctionSubordination:
+  - mot: 'que'
+  - mot: 'comme'
+  - mot: 'lorsque'
+  - mot: 'puisque'
+  - mot: 'quand'
+  - mot: 'quoique'
+  - mot: 'si'

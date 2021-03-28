@@ -2,6 +2,7 @@
 
 namespace App\DataFixtures;
 
+use App\Factory\WordFactory;
 use App\Repository\PrimaryElementRepository;
 use Doctrine\Bundle\FixturesBundle\Fixture;
 use Doctrine\Persistence\ObjectManager;
@@ -12,9 +13,13 @@ use Symfony\Component\Yaml\Yaml;
 class AppFixtures extends Fixture
 {
     private const FIXTURES_TO_LOAD = [
-        'fixtures/subject.yaml',
-        'fixtures/verb.yaml',
-        'fixtures/additionalContent.yaml'
+        'fixtures/adjectif.yaml',
+        'fixtures/verbe.yaml',
+        'fixtures/conjonctionCoordination.yaml',
+        'fixtures/conjonctionSubordination.yaml',
+        'fixtures/determinant.yaml',
+        'fixtures/nom.yaml',
+        'fixtures/preposition.yaml',
     ];
 
     /**
@@ -23,11 +28,17 @@ class AppFixtures extends Fixture
     private $serializer;
 
     /**
+     * @var WordFactory
+     */
+    private $wordFactory;
+
+    /**
      * AppFixtures constructor.
      */
-    public function __construct()
+    public function __construct(WordFactory $wordFactory)
     {
         $this->serializer = new Serializer([new ObjectNormalizer()]);
+        $this->wordFactory = $wordFactory;
     }
 
     /**
@@ -56,8 +67,8 @@ class AppFixtures extends Fixture
     {
         foreach($primaryElements as $entityName => $entities) {
             foreach($entities as $entity) {
-                $primaryElements = $this->serializer->denormalize($entity, $entityName);
-               // $this->primaryElementRepository->save($primaryElements);
+                $word = $this->serializer->denormalize($entity, $entityName);
+                $this->wordFactory->createWord($word);
             }
         }
     }

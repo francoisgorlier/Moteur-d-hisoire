@@ -1,0 +1,7 @@
+App\Entity\Verbe:
+  - mot: 'dors'
+  - mot: 'mange'
+  - mot: 'marche'
+  - mot: 'cours'
+  - mot: 'partage'
+  - mot: 'monte'

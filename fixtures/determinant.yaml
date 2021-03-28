@@ -1,0 +1,19 @@
+App\Entity\Determinant:
+  - mot: 'le'
+    genre: true
+  - mot: 'la'
+    genre: false
+  - mot: 'les'
+    genre: null
+  - mot: 'ce'
+    genre: true
+  - mot: 'cette'
+    genre: false
+  - mot: 'à'
+    genre: null
+  - mot: 'aux'
+    genre: null
+  - mot: 'de'
+    genre:
+  - mot: 'des'
+    genre: null

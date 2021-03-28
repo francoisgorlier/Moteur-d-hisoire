@@ -8,7 +8,7 @@ use Doctrine\ORM\Mapping as ORM;
 /**
  * @ORM\Entity(repositoryClass=AdjectifRepository::class)
  */
-class Adjectif
+class Adjectif implements WordInterface
 {
     /**
      * @ORM\Id

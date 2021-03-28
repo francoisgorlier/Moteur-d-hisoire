@@ -1,0 +1,17 @@
+App\Entity\Nom:
+  - mot: 'oiseau'
+    genre: true
+  - mot: 'chat'
+    genre: true
+  - mot: 'giraffe'
+    genre: false
+  - mot: 'directeur'
+    genre: true
+  - mot: 'homme'
+    genre: true
+  - mot: 'femme'
+    genre: false
+  - mot: 'pendu'
+    genre: true
+  - mot: 'fantôme'
+    genre: true

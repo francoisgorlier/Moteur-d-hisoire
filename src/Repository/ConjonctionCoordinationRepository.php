@@ -19,32 +19,14 @@ class ConjonctionCoordinationRepository extends ServiceEntityRepository
         parent::__construct($registry, ConjonctionCoordination::class);
     }
 
-    // /**
-    //  * @return ConjonctionCoordination[] Returns an array of ConjonctionCoordination objects
-    //  */
-    /*
-    public function findByExampleField($value)
-    {
-        return $this->createQueryBuilder('c')
-            ->andWhere('c.exampleField = :val')
-            ->setParameter('val', $value)
-            ->orderBy('c.id', 'ASC')
-            ->setMaxResults(10)
-            ->getQuery()
-            ->getResult()
-        ;
+    /**
+     * @param ConjonctionCoordination $conjCoordination
+     *
+     * @throws \Doctrine\ORM\ORMException
+     * @throws \Doctrine\ORM\OptimisticLockException
+     */
+    public function save(ConjonctionCoordination $conjCoordination) {
+        $this->_em->persist($conjCoordination);
+        $this->_em->flush();
     }
-    */
-
-    /*
-    public function findOneBySomeField($value): ?ConjonctionCoordination
-    {
-        return $this->createQueryBuilder('c')
-            ->andWhere('c.exampleField = :val')
-            ->setParameter('val', $value)
-            ->getQuery()
-            ->getOneOrNullResult()
-        ;
-    }
-    */
 }

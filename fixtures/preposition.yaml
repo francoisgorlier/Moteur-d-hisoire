@@ -1,0 +1,9 @@
+App\Entity\Preposition:
+  - mot: 'à'
+  - mot: 'de'
+  - mot: 'pour'
+  - mot: 'sur'
+  - mot: 'dans'
+  - mot: 'avec'
+  - mot: 'en'
+  - mot: 'parmi'

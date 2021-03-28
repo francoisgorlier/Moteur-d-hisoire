@@ -1,0 +1,8 @@
+App\Entity\ConjonctionCoordination:
+  - mot: 'mais'
+  - mot: 'ou'
+  - mot: 'et'
+  - mot: 'donc'
+  - mot: 'or'
+  - mot: 'ni'
+  - mot: 'car'

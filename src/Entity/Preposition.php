@@ -8,7 +8,7 @@ use Doctrine\ORM\Mapping as ORM;
 /**
  * @ORM\Entity(repositoryClass=PrepositionRepository::class)
  */
-class Preposition
+class Preposition implements WordInterface
 {
     /**
      * @ORM\Id

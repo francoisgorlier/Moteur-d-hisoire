@@ -8,7 +8,7 @@ use Doctrine\ORM\Mapping as ORM;
 /**
  * @ORM\Entity(repositoryClass=DeterminantRepository::class)
  */
-class Determinant
+class Determinant implements WordInterface
 {
     /**
      * @ORM\Id
